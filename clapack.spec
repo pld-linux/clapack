@@ -2,7 +2,7 @@ Summary:	The CLAPACK libraries for numerical linear algebra
 Summary(pl):	Biblioteki numeryczne CLAPACK do algebry liniowej
 Name:		clapack
 Version:	3.0
-Release:	1
+Release:	2
 License:	freely distributable
 Group:		Development/Libraries
 Source0:	http://www.netlib.org/clapack/%{name}.tgz
