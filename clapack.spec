@@ -14,8 +14,8 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gcc-g77
 BuildRequires:	libtool >= 1:1.4.2-9
+Requires:	cblas = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Requires:	cblas
 
 %description
 CLAPACK (Linear Algebra PACKage) is a standard library for numerical
@@ -47,7 +47,7 @@ przet³umaczony na C przy u¿yciu f2c.
 Summary:	CLAPACK header files
 Summary(pl):	Pliki nag³ówkowe CLAPACK
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 CLAPACK header files.
@@ -59,7 +59,7 @@ Pliki nag³ówkowe CLAPACK.
 Summary:	Static CLAPACK libraries
 Summary(pl):	Biblioteki statyczne CLAPACK
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static CLAPACK libraries.
@@ -88,7 +88,7 @@ w Fortranie 77.
 Summary:	CBLAS header files
 Summary(pl):	Pliki nag³ówkowe CBLAS
 Group:		Development/Libraries
-Requires:	blas = %{version}
+Requires:	cblas = %{version}-%{release}
 
 %description -n cblas-devel
 CBLAS header files.
@@ -100,7 +100,7 @@ Pliki nag³ówkowe CBLAS.
 Summary:	Static CBLAS libraries
 Summary(pl):	Biblioteki statyczne CBLAS
 Group:		Development/Libraries
-Requires:	cblas-devel = %{version}
+Requires:	cblas-devel = %{version}-%{release}
 
 %description -n cblas-static
 Static CBLAS libraries.
@@ -130,7 +130,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install BLAS/WRAP/cblas.h $RPM_BUILD_ROOT/%{_includedir}
+install BLAS/WRAP/cblas.h $RPM_BUILD_ROOT%{_includedir}
 
 %clean
 rm -fr $RPM_BUILD_ROOT
