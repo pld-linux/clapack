@@ -126,7 +126,7 @@ libtoolize --copy --force
 aclocal
 autoheader
 automake --add-missing
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
