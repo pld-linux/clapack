@@ -127,7 +127,8 @@ rm -f ltmain.sh missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -fr $RPM_BUILD_ROOT
