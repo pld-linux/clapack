@@ -5,13 +5,6 @@ Version:	3.0
 Release:	1
 License:	Freely distributable
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Source0:	http://www.netlib.org/clapack/%{name}.tgz
 #Source1:	http://www.netlib.org/clapack/manpages.tgz
 Patch0:		%{name}-automake_support.patch
@@ -54,13 +47,6 @@ przetlumaczony na C przy u©yciu f2c.
 Summary:	CLAPACK header files
 Summary(pl):	Pliki nagЁСwkowe CLAPACK
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -73,13 +59,6 @@ Pliki nagЁСwkowe CLAPACK.
 Summary:	Static CLAPACK libraries
 Summary(pl):	Biblioteki statyczne CLAPACK
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
@@ -92,13 +71,6 @@ Biblioteki statyczne CLAPACK.
 Summary:	The CBLAS (Basic Linear Algebra Subprograms) library for Linux
 Summary(pl):	Biblioteka CBLAS (Basic Linear Algebra Subprograms) dla Linuksa
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 
 %description -n cblas
 CBLAS (Basic Linear Algebra Subprograms) is a standard library for
@@ -116,13 +88,6 @@ w Fortranie 77.
 Summary:	CBLAS header files
 Summary(pl):	Pliki nagЁСwkowe CBLAS
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	blas = %{version}
 
 %description -n cblas-devel
@@ -135,13 +100,6 @@ Pliki nagЁСwkowe CBLAS.
 Summary:	Static CBLAS libraries
 Summary(pl):	Biblioteki statyczne CBLAS
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	cblas-devel = %{version}
 
 %description -n cblas-static
