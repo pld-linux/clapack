@@ -38,16 +38,17 @@ real and complex matrices in both single and double precision. CLAPACK
 is coded in Fortran77 and translated to C using f2c.
 
 %description -l pl
-CLAPACK (Linear Algebra PACKage) jest standardow± bibliotek± numeryczn±
-do algebry liniowej. Dostarcza funkcje rozwi±zywania: uk³adów równañ
-liniowych, uk³adów równañ metod± najmniejszych kwadratów, problemów
-w³asnych. Zawiera algorytmy faktoryzacji macierzy (LU, Cholesky'ego,
-QR, SVD, Schura, uogólnion± Schura) i zwi±zanych z tym obliczeñ (np.
-przenumerowywanie w faktoryzacji Schura i estymacjê uwarunkowania).
-CLAPACK mo¿e obs³ugiwaæ macierze blokowe i pasmowe, ale nie rzadkie w
-ogólnym przypadku. Zapewnia funkcjonalno¶æ dla macierzy rzeczywistych
-i zespolonych, dla liczb pojedynczej i podwójnej precyzji. CLAPACK jest
-napisany w Fortranie 77 i przetlumaczony na C przy urzyciu f2c.
+CLAPACK (Linear Algebra PACKage) jest standardow± bibliotek±
+numeryczn± do algebry liniowej. Dostarcza funkcje rozwi±zywania:
+uk³adów równañ liniowych, uk³adów równañ metod± najmniejszych
+kwadratów, problemów w³asnych. Zawiera algorytmy faktoryzacji macierzy
+(LU, Cholesky'ego, QR, SVD, Schura, uogólnion± Schura) i zwi±zanych z
+tym obliczeñ (np. przenumerowywanie w faktoryzacji Schura i estymacjê
+uwarunkowania). CLAPACK mo¿e obs³ugiwaæ macierze blokowe i pasmowe,
+ale nie rzadkie w ogólnym przypadku. Zapewnia funkcjonalno¶æ dla
+macierzy rzeczywistych i zespolonych, dla liczb pojedynczej i
+podwójnej precyzji. CLAPACK jest napisany w Fortranie 77 i
+przetlumaczony na C przy u¿yciu f2c.
 
 %package devel
 Summary:	CLAPACK header files
@@ -84,7 +85,7 @@ Requires:	%{name}-devel = %{version}
 %description static
 Static CLAPACK libraries.
 
-%description -l pl static
+%description static -l pl
 Biblioteki statyczne CLAPACK.
 
 %package -n cblas
