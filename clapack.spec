@@ -121,11 +121,11 @@ mv -f INSTALL install
 #>config.h.in
 
 %build
-rm -f ltmain.sh
+rm -f ltmain.sh missing
 %{__libtoolize}
-aclocal
-autoheader
-automake --add-missing
+%{__aclocal}
+%{__autoheader}
+%{__automake}
 %{__autoconf}
 %configure
 %{__make}
