@@ -2,7 +2,7 @@ Summary:	The CLAPACK libraries for numerical linear algebra
 Summary(pl):	Biblioteki numeryczne CLAPACK do algebry liniowej
 Name:		clapack
 Version:	3.0
-Release:	2
+Release:	3
 License:	freely distributable
 Group:		Development/Libraries
 Source0:	http://www.netlib.org/clapack/%{name}.tgz
@@ -130,6 +130,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install BLAS/WRAP/cblas.h $RPM_BUILD_ROOT/%{_includedir}
+
 %clean
 rm -fr $RPM_BUILD_ROOT
 
@@ -162,6 +164,7 @@ rm -fr $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_libdir}/libcblas.so
 %{_libdir}/libcblas.la
+%{_includedir}/cblas.h
 
 %files -n cblas-static
 %defattr(644,root,root,755)
