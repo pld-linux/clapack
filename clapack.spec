@@ -36,12 +36,12 @@ numeryczn± do algebry liniowej. Dostarcza funkcje rozwi±zywania:
 uk³adów równañ liniowych, uk³adów równañ metod± najmniejszych
 kwadratów, problemów w³asnych. Zawiera algorytmy faktoryzacji macierzy
 (LU, Cholesky'ego, QR, SVD, Schura, uogólnion± Schura) i zwi±zanych z
-tym obliczeñ (np. przenumerowywanie w faktoryzacji Schura i estymacjê
+tym obliczeñ (np. przenumerowanie w faktoryzacji Schura i estymacjê
 uwarunkowania). CLAPACK mo¿e obs³ugiwaæ macierze blokowe i pasmowe,
 ale nie rzadkie w ogólnym przypadku. Zapewnia funkcjonalno¶æ dla
 macierzy rzeczywistych i zespolonych, dla liczb pojedynczej i
 podwójnej precyzji. CLAPACK jest napisany w Fortranie 77 i
-przetlumaczony na C przy u¿yciu f2c.
+przet³umaczony na C przy u¿yciu f2c.
 
 %package devel
 Summary:	CLAPACK header files
