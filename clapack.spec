@@ -122,7 +122,7 @@ mv -f INSTALL install
 
 %build
 rm -f ltmain.sh
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 autoheader
 automake --add-missing
