@@ -127,7 +127,7 @@ aclocal
 autoheader
 automake --add-missing
 autoconf
-%configure 
+%configure
 %{__make}
 
 %install
@@ -154,7 +154,7 @@ rm -fr $RPM_BUILD_ROOT
 %doc README*
 %attr(755,root,root) %{_libdir}/libclapack.so.*.*.*
 
-%files devel 
+%files devel
 %defattr(644,root,root,755)
 %{_libdir}/libclapack.so
 %{_includedir}/clapack.h
@@ -163,7 +163,7 @@ rm -fr $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_libdir}/libclapack.a
 
-%files -n cblas 
+%files -n cblas
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libcblas.so.*.*.*
 
