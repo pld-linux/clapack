@@ -9,7 +9,7 @@ Source0:	http://www.netlib.org/clapack/%{name}.tgz
 # Source0-md5:	1b6d89b3352d0c678e50a03724458053
 #Source1:	http://www.netlib.org/clapack/manpages.tgz
 Patch0:		%{name}-automake_support.patch
-URL:		http://www.netlib.org/lapack/
+URL:		http://www.netlib.org/clapack/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gcc-g77
