@@ -11,9 +11,8 @@ Patch0:		%{name}-automake_support.patch
 URL:		http://www.netlib.org/lapack/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	ed
 BuildRequires:	gcc-g77
-BuildRequires:	libtool
+BuildRequires:	libtool >= 1:1.4.2-9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	cblas
 
@@ -113,12 +112,6 @@ Biblioteki statyczne CBLAS.
 %patch0 -p1
 # directory INSTALL conflicts with file INSTALL needed by automake
 mv -f INSTALL install
->INSTALL
->AUTHORS
->ChangeLog
->NEWS
->COPYING
-#>config.h.in
 
 %build
 rm -f ltmain.sh missing
@@ -132,22 +125,17 @@ rm -f ltmain.sh missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-#workaround libtool
-ed SRC/libclapack.la <<EOF
-s/relink_command=.*/relink_command=''/
-w
-q
-EOF
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -fr $RPM_BUILD_ROOT
 
-%post           -p /sbin/ldconfig
-%postun         -p /sbin/ldconfig
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
-%post   -n cblas -p /sbin/ldconfig
-%postun -n cblas -p /sbin/ldconfig
+%post	-n cblas -p /sbin/ldconfig
+%postun	-n cblas -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
@@ -157,6 +145,7 @@ rm -fr $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %{_libdir}/libclapack.so
+%{_libdir}/libclapack.la
 %{_includedir}/clapack.h
 
 %files static
@@ -170,6 +159,7 @@ rm -fr $RPM_BUILD_ROOT
 %files -n cblas-devel
 %defattr(644,root,root,755)
 %{_libdir}/libcblas.so
+%{_libdir}/libcblas.la
 
 %files -n cblas-static
 %defattr(644,root,root,755)
