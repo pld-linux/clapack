@@ -16,11 +16,11 @@ Source0:	http://www.netlib.org/clapack/%{name}.tgz
 #Source1:	http://www.netlib.org/clapack/manpages.tgz
 Patch0:		%{name}-automake_support.patch
 URL:		http://www.netlib.org/lapack/
-BuildRequires:	gcc-g77
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool
 BuildRequires:	ed
+BuildRequires:	gcc-g77
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	cblas
 
