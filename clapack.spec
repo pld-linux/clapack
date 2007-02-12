@@ -1,5 +1,5 @@
 Summary:	The CLAPACK libraries for numerical linear algebra
-Summary(pl.UTF-8):   Biblioteki numeryczne CLAPACK do algebry liniowej
+Summary(pl.UTF-8):	Biblioteki numeryczne CLAPACK do algebry liniowej
 Name:		clapack
 Version:	3.0
 Release:	3
@@ -45,7 +45,7 @@ przetłumaczony na C przy użyciu f2c.
 
 %package devel
 Summary:	CLAPACK header files
-Summary(pl.UTF-8):   Pliki nagłówkowe CLAPACK
+Summary(pl.UTF-8):	Pliki nagłówkowe CLAPACK
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -57,7 +57,7 @@ Pliki nagłówkowe CLAPACK.
 
 %package static
 Summary:	Static CLAPACK libraries
-Summary(pl.UTF-8):   Biblioteki statyczne CLAPACK
+Summary(pl.UTF-8):	Biblioteki statyczne CLAPACK
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -69,7 +69,7 @@ Biblioteki statyczne CLAPACK.
 
 %package -n cblas
 Summary:	The CBLAS (Basic Linear Algebra Subprograms) library for Linux
-Summary(pl.UTF-8):   Biblioteka CBLAS (Basic Linear Algebra Subprograms) dla Linuksa
+Summary(pl.UTF-8):	Biblioteka CBLAS (Basic Linear Algebra Subprograms) dla Linuksa
 Group:		Development/Libraries
 
 %description -n cblas
@@ -86,7 +86,7 @@ w Fortranie 77.
 
 %package -n cblas-devel
 Summary:	CBLAS header files
-Summary(pl.UTF-8):   Pliki nagłówkowe CBLAS
+Summary(pl.UTF-8):	Pliki nagłówkowe CBLAS
 Group:		Development/Libraries
 Requires:	cblas = %{version}-%{release}
 
@@ -98,7 +98,7 @@ Pliki nagłówkowe CBLAS.
 
 %package -n cblas-static
 Summary:	Static CBLAS libraries
-Summary(pl.UTF-8):   Biblioteki statyczne CBLAS
+Summary(pl.UTF-8):	Biblioteki statyczne CBLAS
 Group:		Development/Libraries
 Requires:	cblas-devel = %{version}-%{release}
 
