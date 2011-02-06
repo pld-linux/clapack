@@ -133,7 +133,7 @@ rm -rf $RPM_BUILD_ROOT
 install BLAS/WRAP/cblas.h $RPM_BUILD_ROOT%{_includedir}
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %post	-p /sbin/ldconfig
 %postun	-p /sbin/ldconfig
