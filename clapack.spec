@@ -13,6 +13,7 @@ Patch2:		%{name}-%{version}-hang.patch
 Patch3:		%{name}-%{version}-findblas-r6.patch
 URL:		http://www.netlib.org/clapack/
 BuildRequires:	cmake
+BuildRequires:	f2c
 BuildRequires:	gcc-g77
 BuildRequires:	libtool >= 1:1.4.2-9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
