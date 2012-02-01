@@ -2,7 +2,7 @@ Summary:	The CLAPACK libraries for numerical linear algebra
 Summary(pl.UTF-8):	Biblioteki numeryczne CLAPACK do algebry liniowej
 Name:		clapack
 Version:	3.2.1
-Release:	1
+Release:	2
 License:	freely distributable
 Group:		Development/Libraries
 Source0:	http://www.netlib.org/clapack/%{name}-%{version}-CMAKE.tgz
@@ -13,7 +13,7 @@ Patch2:		%{name}-%{version}-hang.patch
 Patch3:		%{name}-%{version}-findblas-r6.patch
 URL:		http://www.netlib.org/clapack/
 BuildRequires:	cmake
-BuildRequires:	f2c
+BuildRequires:	libf2c-devel
 BuildRequires:	gcc-g77
 BuildRequires:	libtool >= 1:1.4.2-9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
